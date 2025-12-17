@@ -1,0 +1,117 @@
+#cabecera {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+
+
+#formulario {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff3e6; /* color suave del botón */
+  border: 2px solid #cccccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.fila {
+  display: flex;
+  gap: 20px; /* espacio entre columnas */
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.columna {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.columna label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.caja, select {
+  padding: 6px 8px;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.caja:focus, select:focus {
+  outline: none;
+  border-color: #f5bf8d;
+  background-color: #fff7eb;
+}
+
+/* Botones */
+.boton {
+  border: 2px solid #cccccc;
+  background-color: #fff3e6;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.boton:hover {
+  background-color: #f5bf8d;
+}
+
+/* Input oculto para archivo */
+input[type="file"] {
+  display: none;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+  accent-color: #f5bf8d;
+  margin-right: 5px;
+}
+
+
+/* Asteriscos */
+.asterisco {
+  color: #df0209;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+/* Ajustes select múltiple */
+#interes {
+  height: 80px;
+  border-color: #cccccc;
+}
+
+.columna#sexo {
+  display: flex;
+  flex-direction: row; /* todo en fila */
+  align-items: center; /* alinea verticalmente */
+  gap: 8px; /* espacio entre input y texto */
+}
+
+.columna#acepto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.obligatorio{
+  color: #df0209
+}
+
+/* Ajusta los labels para que no ocupen toda la línea */
+.columna#sexo label,
+.columna#acepto label {
+  margin: 0;
+  font-weight: bold;
+}

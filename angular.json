@@ -22,11 +22,13 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "public/_redirects"
             ],
             "styles": [
               "src/styles.css"
-            ]
+            ],
+            "outputPath": "dist/dejovenes"
           },
           "configurations": {
             "production": {
